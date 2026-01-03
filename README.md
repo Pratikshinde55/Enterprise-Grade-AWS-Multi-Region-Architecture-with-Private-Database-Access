@@ -183,3 +183,23 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
 -----
 
+# VPC Peering Different regional: [AT Mumbai region]
+From Mumbai region we sent req vpc peering to the Sydney region
+
+1. Create VPC Peering Request (Mumbai):
+
+Go to VPC → Peering Connections -> Click Create peering connection
+
+VPC (Requester) -> PS-Workpress-vpc-mumbai [This is our mumbai region VPC name]
+
+Account -> 	My account
+
+Region	-> Another region
+
+Region	-> ap-southeast-2 (Sydney)
+
+VPC ID (Accepter)-> 	vpc-09399cfe5356f7616 [sydney region vpc PS-DataBase-VPC id]
+
+<img width="1705" height="695" alt="image" src="https://github.com/user-attachments/assets/3c92a354-acdb-42cd-9ab7-8b7de13f9aab" />
+
+
