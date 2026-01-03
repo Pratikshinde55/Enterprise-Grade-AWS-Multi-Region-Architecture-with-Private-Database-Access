@@ -64,6 +64,13 @@ Subnet associations:
 In Route we add use NAT for go outside:
 <img width="1512" height="398" alt="image" src="https://github.com/user-attachments/assets/86d973a6-f5fb-44cf-a2af-84b3ef44a06a" />
 
+- Note:
+  We can launch NAT in multiple zone for HA.
+
+  ## 7. Final VPC architecure for Mumbai Region:
+  <img width="1597" height="487" alt="image" src="https://github.com/user-attachments/assets/0b951425-4fef-4b2f-b225-b194251e330e" />
+
+
 
 
 
