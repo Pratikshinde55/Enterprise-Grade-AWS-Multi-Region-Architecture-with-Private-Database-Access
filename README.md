@@ -264,21 +264,18 @@ Here i used 8.8.4.4 public ip for test 1st time.
 ## 1. Create new Customer gateway & put Sydeny region Tunner1 Public IP here (sydney tunnel1- 13.238.169.119)
 <img width="1447" height="561" alt="image" src="https://github.com/user-attachments/assets/1367d41a-0d27-4cae-af1b-5fb8c272a514" />
 
-## 2. Now Modify mumbai Site-to-site VPN:
-Add final customer Gateway
-
-<img width="1397" height="716" alt="image" src="https://github.com/user-attachments/assets/e837a540-0df5-4a4a-8816-f79d1774e2ef" />
-The VPN status show: Modifying this take 2 to 5 mins
-
-## 3. Now agin Create new to Site-to-site VPN: [IMP]
+## 2. Now agin Create new to Site-to-site VPN: [IMP]
 <img width="1662" height="823" alt="image" src="https://github.com/user-attachments/assets/fb2137f0-f03c-49e9-b392-59aa874ddb1b" />
 
 
-## 4. Add route in Mumbai private route table:
+## 3. Add route in Mumbai private route table:
 
 Private Route of NAT - name: PS-Wordpress-RouteTable-NAT
 
 Add target sydney vpn with sydney region VPC CIDR
+
+Destination: 10.10.0.0/16
+Target: vgw-mumbai
 
 <img width="1586" height="286" alt="image" src="https://github.com/user-attachments/assets/3a3b0037-ea08-4caa-b75a-26e3d8db0447" />
 
@@ -293,3 +290,12 @@ Add target sydney vpn with sydney region VPC CIDR
 
 ## 2. Now Modify mumbai Site-to-site VPN:
 Add final customer Gateway
+
+## 3. Add route in Sydney private route table:
+
+Private Route of NAT: PS-DataBase-RouteTable-NAT
+
+Destination: 10.0.0.0/16
+Target: vgw-sydney
+
+<img width="1585" height="277" alt="image" src="https://github.com/user-attachments/assets/cace0f7d-1158-4066-a1ab-818eed3170a3" />
