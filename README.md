@@ -174,38 +174,40 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
        docker run -dit --name database \
        --network psnet -v /mydata:/var/lib/mysql \
        -e MYSQL_ROOT_PASSWORD=pratik55  \
-       -e MYSQL_DATABASE=mydatabase
-       -e MYSQL_USER=jack
-       -e MYSQL_PASSWORD=jack11 mysql
+       -e MYSQL_DATABASE=mydatabase \
+       -e MYSQL_USER=jack \
+       -e MYSQL_PASSWORD=jack11 \
+       -p 3306:3306 \
+       mysql
 
 
-4. Login to Container using root: (pass- pratik55)
+5. Login to Container using root: (pass- pratik55)
 
       docker exec -it database mysql -u root -p
 
-5. Fix the user properly:
+6. Fix the user properly:
 
       USE mysql;
 
-6. Drop user if partially exists:
+7. Drop user if partially exists:
 
      DROP USER IF EXISTS 'jack'@'%';
      DROP USER IF EXISTS 'jack'@'localhost';
 
- 7. Create user (allow remote access):
+ 8. Create user (allow remote access):
 
      CREATE USER 'jack'@'%' IDENTIFIED BY 'jack11';
 
-8. Grant access to your DB:
+9. Grant access to your DB:
 
       GRANT ALL PRIVILEGES ON mydatabase.* TO 'jack'@'%';
       FLUSH PRIVILEGES;
 
-9. Verify user:
+10. Verify user:
 
       SELECT Host, User FROM mysql.user WHERE User='jack';
 
-10. Test From Local Host:(Pass jack11)
+11. Test From Local Host:(Pass jack11)
 
       docker exec -it database mysql -u jack -p
 
