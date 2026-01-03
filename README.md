@@ -88,20 +88,42 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 # Sydney Region: DataBase Backend(Private)
 This Region only used for host db in private ec2 No public connectivity or anything.
 
-1. Create VPC:
+## 1. Create VPC:
 Name: PS-DataBase-VPC
 CIDR: 10.10.0.0/16
 
-2. Create 4 subnet, Two public two private:
+## 2. Create 4 subnet, Two public two private:
 <img width="1312" height="152" alt="image" src="https://github.com/user-attachments/assets/0ee2146a-92c5-4841-8ea5-3c668f2d1320" />
 
 
-3. Now create Internet gateway:
+## 3. Now create Internet gateway:
 
 Here Public DNAY traffic not come in but inside traffic like install images need go outside So NAT is needed.
 
 **NAT Gateway WILL NOT WORK without IGW, NAT Gateway must be in a public subnet**  So we need Internet gateway here also.
 
+Here Alos same this create Internet GAteway and then in Action attach VPC
+name: PS-DataBase-Internet-Gateway
+
+## 4. Create Route Table For Internet gateway:
+subnet associations:
+<img width="1283" height="282" alt="image" src="https://github.com/user-attachments/assets/ee0bf3fd-2f84-42d4-b6ef-9074de5b4a24" />
+
+Route To Target-IG:
+<img width="1412" height="273" alt="image" src="https://github.com/user-attachments/assets/2bdaab32-4f9e-4455-b24b-072036eb1046" />
+
+## 5. NAT Gateway: SNAT
+<img width="1652" height="651" alt="image" src="https://github.com/user-attachments/assets/a061d716-58fa-4c5f-96ca-acc926abc61e" />
+
+## 6. Route Table for NAT Gateway:
+subnet associations:
+<img width="1527" height="272" alt="image" src="https://github.com/user-attachments/assets/9751ebe9-0ad9-4ce9-a3cb-3c0400b08183" />
+
+Route To Target-NAT:
+<img width="1532" height="271" alt="image" src="https://github.com/user-attachments/assets/c0d26519-64c8-4b02-ae92-dbb03a647c12" />
+
+## 7. Final VPC architecure for Mumbai Region:
+<img width="1597" height="492" alt="image" src="https://github.com/user-attachments/assets/05fb83c8-8b2c-4d4e-b02a-cc7a8aa67929" />
 
 
 
