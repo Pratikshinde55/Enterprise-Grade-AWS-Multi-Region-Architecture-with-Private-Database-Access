@@ -126,5 +126,17 @@ Route To Target-NAT:
 ## 7. Final VPC architecure for Mumbai Region:
 <img width="1597" height="492" alt="image" src="https://github.com/user-attachments/assets/05fb83c8-8b2c-4d4e-b02a-cc7a8aa67929" />
 
+## 8. Launch EC2 in Private Subnet:(Full Secure) 
+This ec2 for Database.
+
+Name Ec2: Database-ec2-sydney
+
+During Launch Ec2: Network settings
+<img width="1172" height="377" alt="image" src="https://github.com/user-attachments/assets/a8e8daf7-8df6-4431-864f-d6da3a3afb23" />
+
+Advanced settings for allow ec2 ssm access: (Create this IAM Rule at IAM service)
+<img width="1200" height="253" alt="image" src="https://github.com/user-attachments/assets/5cc6a74c-26dc-44f7-9df0-d598879cc601" />
+
+Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
 -----
