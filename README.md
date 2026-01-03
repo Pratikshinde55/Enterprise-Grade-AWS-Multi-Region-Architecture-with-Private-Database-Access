@@ -19,7 +19,7 @@ Now create 4 subnets with diff available zones for HA & Fault tolerance:
 Note: ALL subnets are private no one is public, The subnet which are attach to internet gateway that will Public subnet menas allow to client come in.
 
 
-## 3. Now Create Internet GateWay for Your VPC:
+## 3. Now Create Internet GateWay for Your VPC: DNAT
 
 Name: PS-Wordpress-InternetGateway
 
@@ -40,7 +40,21 @@ Here Route enable means from internet gateway outside traffic allow using route 
 <img width="1445" height="287" alt="image" src="https://github.com/user-attachments/assets/13c52e88-d0e6-4855-9ec9-ad23873f704b" />
 
 
-## 5. 
+## 5. NAT Gateway: SNAT
+
+Basicallu NAT is ec2 instance launch in public subnet that subnet have internet gateway attched, NAT ec2 instance which is laucunched by AWS SO our private subnet services can go to outside and download packages.
+
+Name: PS-wordpress-NAT_Gateway
+
+<img width="1501" height="647" alt="image" src="https://github.com/user-attachments/assets/4b1cc4d9-2e6f-49d4-8425-2cc7cb997a60" />
+
+NAT Gateway must launch in Public Subnet.
+
+## 6. Route Table for NAT Gateway:
+
+Here we create new route table for NAT Gateway
+
+name:
 
 
 
