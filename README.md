@@ -1,4 +1,4 @@
-# DevOps Portfolio Platform on AWS using ALB, Private VPC, and VPN
+x# DevOps Portfolio Platform on AWS using ALB, Private VPC, and VPN
 <img width="1340" height="887" alt="image" src="https://github.com/user-attachments/assets/226ff2a9-d07f-46d5-b574-04627c86103b" />
 
 
@@ -145,3 +145,33 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 -----
 
 # DB-Setup on Sydney EC2:
+
+1. Install Docker on This ec2 and start service:
+
+    yum install docker -y
+
+Enable docker service:
+
+    systemctl start docker 
+    systemctl enable  docker --now 
+
+2. Create Own Docker network:
+
+      docker network create \
+      --driver bridge \
+      --subnet 172.18.0.0/16 \
+      psnet
+
+Check Network created:
+
+      docker network ls
+
+3. Launch Container In that Network:
+
+
+      docker run -dit --name database \
+      --network psnet -v /mydata:/var/lib/mysql \
+      -e MYSQL_ROOT_PASSWORD=pratik55  \
+      -e MYSQL_DATABASE=mydatabase
+      -e MYSQL_USER=jack
+      -e MYSQL_PASSWORD=jack11 mysql
