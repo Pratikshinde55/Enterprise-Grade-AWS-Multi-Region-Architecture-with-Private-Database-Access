@@ -1,4 +1,4 @@
-x# DevOps Portfolio Platform on AWS using ALB, Private VPC, and VPN
+# DevOps Portfolio Platform on AWS using ALB, Private VPC, and VPN
 <img width="1340" height="887" alt="image" src="https://github.com/user-attachments/assets/226ff2a9-d07f-46d5-b574-04627c86103b" />
 
 
