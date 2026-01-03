@@ -187,7 +187,7 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 1. STEP 1: Create Virtual Private Gateway (VGW)
 Create VGW this is nedpoint of out VPC of mumbai region.
 
-  Steps:
+Steps:
   - VPC Console → Virtual Private Gateways-> Create VGW (Name: vgw-mumbai)
   - ASN: 64512
   - Attach to Mumbai VPC 
