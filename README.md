@@ -67,8 +67,14 @@ In Route we add use NAT for go outside:
 - Note:
   We can launch NAT in multiple zone for HA.
 
-  ## 7. Final VPC architecure for Mumbai Region:
-  <img width="1597" height="487" alt="image" src="https://github.com/user-attachments/assets/0b951425-4fef-4b2f-b225-b194251e330e" />
+## 7. Final VPC architecure for Mumbai Region:
+<img width="1597" height="487" alt="image" src="https://github.com/user-attachments/assets/0b951425-4fef-4b2f-b225-b194251e330e" />
+
+## 8. Launch EC2 in Private Subnet:(Full Secure)
+
+During Launching ec2 the ec2 must in Private Subnet & no public accesss
+<img width="927" height="349" alt="image" src="https://github.com/user-attachments/assets/58df273b-58d0-4db5-99f8-9e414d65cd80" />
+
 
 
 
