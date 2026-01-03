@@ -16,6 +16,7 @@ Now create 4 subnets with diff available zones for HA & Fault tolerance:
   - PS-Workpress-vpc-mumbai-Public-1a (CIDR: 10.0.11.0/24) aps1-az3 (ap-south-1b)
 
 
+Note: ALL subnets are private no one is public, The subnet which are attach to internet gateway that will Public subnet menas allow to client come in.
 
 
 ## 3. Now Create Internet GateWay for Your VPC:
@@ -23,3 +24,9 @@ Now create 4 subnets with diff available zones for HA & Fault tolerance:
 Name: PS-Wordpress-InternetGateway
 
 After Create Internet Gateway then Go to "Action" Button and attch The VPC(PS-Workpress-vpc-mumbai)
+
+## 4. Create Route Table For Internet gateway:
+
+name route tabel: PS-Wordpress-RouteTable-internetGateway, Then attach the VPC to route table.
+
+Once create Route Table in "Subnet associations" Attch the subnet that we want to make public.
