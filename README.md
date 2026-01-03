@@ -30,3 +30,9 @@ After Create Internet Gateway then Go to "Action" Button and attch The VPC(PS-Wo
 name route tabel: PS-Wordpress-RouteTable-internetGateway, Then attach the VPC to route table.
 
 Once create Route Table in "Subnet associations" Attch the subnet that we want to make public.
+
+Explicit subnet associations 
+<img width="1256" height="272" alt="image" src="https://github.com/user-attachments/assets/5365ee95-f512-4123-95b4-687290988e01" />
+
+
+
