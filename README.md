@@ -138,5 +138,9 @@ Advanced settings for allow ec2 ssm access: (Create this IAM Rule at IAM service
 <img width="1200" height="253" alt="image" src="https://github.com/user-attachments/assets/5cc6a74c-26dc-44f7-9df0-d598879cc601" />
 
 Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
+<img width="1180" height="142" alt="image" src="https://github.com/user-attachments/assets/2ee8920c-7584-48f9-9e41-58caede4867d" />
+
 
 -----
+
+# DB-Setup on Sydney EC2:
