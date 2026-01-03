@@ -223,3 +223,44 @@ Mumbai Region: (Peering Connection)
 <img width="1501" height="345" alt="image" src="https://github.com/user-attachments/assets/73b095fa-317d-4339-bff8-4ab9d4efee26" />
 
 
+
+## 3. Allow Private Route Table To Pass VPC Flow at both region: [NAT Route table is Private route table]
+
+Mumbai region NAT route Table:(Mumbai private route table)
+
+Destination: 10.10.0.0/16   
+
+Target: Peering connection
+
+<img width="1426" height="307" alt="image" src="https://github.com/user-attachments/assets/51d81345-f4f3-41e4-bbae-7b2d82dafd29" />
+
+
+Sydney region NAT route Table: (Sydney private route table)
+
+Destination: 10.0.0.0/16
+  
+Target: Peering connection
+
+<img width="1521" height="307" alt="image" src="https://github.com/user-attachments/assets/ff47e875-345c-49a8-afe0-b6d95d77f3a4" />
+
+## Now on Both Region Ec2 allow security group- inbound rule:
+
+Mumbai EC2 inbound rule: (Source 10.10.0.0/16 is sydney vpc mask)
+<img width="1407" height="412" alt="image" src="https://github.com/user-attachments/assets/374ad029-3aab-43da-8cfe-d6c8da7f449b" />
+
+Sydney EC2 inbound rule: (Source 10.0.0.0/16 is Mumbai VPC Mask) 
+<img width="1393" height="497" alt="image" src="https://github.com/user-attachments/assets/527a320e-e3b3-47bc-9bc7-9f76b434b02b" />
+
+
+## Test From Both EC2 to other region EC2 Private IP: (Private IP Connection work)
+
+Mumbai Region EC2 To Sydney region EC2 Private IP ping:
+<img width="1486" height="182" alt="image" src="https://github.com/user-attachments/assets/b40731d7-f551-4946-a742-51ba443c04a9" />
+
+Sydney Region EC2 To Mumbai region EC2 Private IP ping:
+<img width="1572" height="193" alt="image" src="https://github.com/user-attachments/assets/07529f92-b117-4530-8387-c973d55220e0" />
+
+
+-----
+
+-----
