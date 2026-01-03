@@ -114,7 +114,7 @@ Route To Target-IG:
 <img width="1412" height="273" alt="image" src="https://github.com/user-attachments/assets/2bdaab32-4f9e-4455-b24b-072036eb1046" />
 
 ## 5. NAT Gateway: SNAT
-<img width="1652" height="651" alt="image" src="https://github.com/user-attachments/assets/a061d716-58fa-4c5f-96ca-acc926abc61e" />
+<img width="1557" height="652" alt="image" src="https://github.com/user-attachments/assets/d1780e16-1e40-45ad-a84c-eab4fd3692b1" />
 
 ## 6. Route Table for NAT Gateway:
 subnet associations:
@@ -124,7 +124,7 @@ Route To Target-NAT:
 <img width="1532" height="271" alt="image" src="https://github.com/user-attachments/assets/c0d26519-64c8-4b02-ae92-dbb03a647c12" />
 
 ## 7. Final VPC architecure for Sydney Region:
-<img width="1597" height="492" alt="image" src="https://github.com/user-attachments/assets/05fb83c8-8b2c-4d4e-b02a-cc7a8aa67929" />
+<img width="1596" height="502" alt="image" src="https://github.com/user-attachments/assets/9c93132a-77e6-4502-8c6f-71f7485a4572" />
 
 ## 8. Launch EC2 in Private Subnet:(Full Secure) 
 This ec2 for Database.
