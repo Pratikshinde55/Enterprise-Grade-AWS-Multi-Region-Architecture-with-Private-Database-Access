@@ -183,11 +183,57 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
 
 # Site-to-Site VPN at Mumbai Region: CREATE IPsec VPN
+For AWS-to-AWS Site-to-Site VPN, I created Customer Gateways with temporary public IPs and then updated them using AWS-assigned VPN tunnel outside IPs.
 
-1. STEP 1: Create Virtual Private Gateway (VGW)
+1. STEP-1: Create Virtual Private Gateway (VGW)
+   
 Create VGW this is nedpoint of out VPC of mumbai region.
 
 Steps:
   - VPC Console → Virtual Private Gateways-> Create VGW (Name: vgw-mumbai)
   - ASN: 64512
   - Attach to Mumbai VPC 
+<img width="1593" height="277" alt="image" src="https://github.com/user-attachments/assets/0b77e2bf-28ec-4125-bf10-cfba1594cc7d" />
+
+Same time created at sydnet region.
+
+2. STEP 2: Create Customer Gateways (CGW)
+
+Mumbai: Create Customer Gateway (for Sydney)
+
+Here both region we use AWS VPN so we need 1st make dummy IP for other region customer gateway :
+
+Here i used 8.8.8.8 public ip for test 1st time.
+
+<img width="1523" height="427" alt="image" src="https://github.com/user-attachments/assets/a6262e17-769c-44d0-881c-339a84ae17a1" />
+
+
+
+3. Site-to-Site VPN Connections
+
+Target Gateway: Virtual Private Gateway
+
+Virtual Private Gateway: vgw-mumbai
+
+Customer Gateway: Existing
+
+Customer Gateway: cgw-sydney-temp
+
+Routing: Static
+Static Route: 10.20.0.0/16
+
+This is Testing we still not put sydney region info:
+<img width="1577" height="707" alt="image" src="https://github.com/user-attachments/assets/26baadbf-26ba-4587-9862-3cc8ffeb902b" />
+
+
+- AWS has assigned Outside IPs:
+
+  Tunnel 1: 13.201.111.175
+  Tunnel 2: 43.204.9.161
+
+
+
+
+# sydney region site-to-site VPN:
+For AWS-to-AWS Site-to-Site VPN, I created Customer Gateways with temporary public IPs and then updated them using AWS-assigned VPN tunnel outside IPs.
+
