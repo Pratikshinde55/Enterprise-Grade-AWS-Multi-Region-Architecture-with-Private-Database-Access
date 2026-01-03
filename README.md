@@ -71,10 +71,13 @@ In Route we add use NAT for go outside:
 <img width="1597" height="487" alt="image" src="https://github.com/user-attachments/assets/0b951425-4fef-4b2f-b225-b194251e330e" />
 
 ## 8. Launch EC2 in Private Subnet:(Full Secure)
+EC2 name: WorkPress_Mumbai-region-EC2
 
 During Launching ec2 the ec2 must in Private Subnet & no public accesss
 <img width="927" height="349" alt="image" src="https://github.com/user-attachments/assets/58df273b-58d0-4db5-99f8-9e414d65cd80" />
 
+In "Adanced details"- Now attch a IAM rule that allow ec2 ssm access (AmazonSSMManagedInstanceCore):
+<img width="1090" height="237" alt="image" src="https://github.com/user-attachments/assets/8a3494fb-2208-422e-ab29-283255d052c3" />
 
 
 
