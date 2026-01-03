@@ -177,3 +177,18 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
        -e MYSQL_DATABASE=mydatabase
        -e MYSQL_USER=jack
        -e MYSQL_PASSWORD=jack11 mysql
+
+
+-----
+
+
+# Site-to-Site VPN at Mumbai Region: CREATE IPsec VPN
+
+1. STEP 1: Create Virtual Private Gateway (VGW)
+
+  1st create VGW this is nedpoint of out VPC of mumbai region.
+
+  Steps:
+  - VPC Console → Virtual Private Gateways-> Create VGW (Name: vgw-mumbai)
+  - ASN: 64512
+  - Attach to Mumbai VPC 
