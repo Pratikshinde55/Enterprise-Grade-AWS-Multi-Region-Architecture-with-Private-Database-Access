@@ -10,7 +10,7 @@ Create Subnet using "PS-Workpress-vpc-mumbai" VPC.
 
 Now create 4 subnets with diff available zones for HA & Fault tolerance:
 
-  - PS-Workpress-vpc-mumbai-Pivate-1a (CIDR: 10.0.1.0/24) aps1-az3 (ap-south-1ba)
+  - PS-Workpress-vpc-mumbai-Pivate-1a (CIDR: 10.0.1.0/24) aps1-az3 (ap-south-1a)
   - PS-Workpress-vpc-mumbai-Pivate-1b (CIDR: 10.0.2.0/24) aps1-az3 (ap-south-1b))
   - PS-Workpress-vpc-mumbai-Public-1a (CIDR: 10.0.10.0/24) aps1-az1 (ap-south-1a)
   - PS-Workpress-vpc-mumbai-Public-1a (CIDR: 10.0.11.0/24) aps1-az3 (ap-south-1b)
@@ -18,4 +18,8 @@ Now create 4 subnets with diff available zones for HA & Fault tolerance:
 
 
 
-3.  
+3. Now Create Internet GateWay for Your VPC:
+
+Name: PS-Wordpress-InternetGateway
+
+After Create Internet Gateway then Go to "Action" Button and attch The VPC(PS-Workpress-vpc-mumbai)
