@@ -148,7 +148,7 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
 1. Install Docker on This ec2 and start service:
 
-    yum install docker -y
+     yum install docker -y
 
 Enable docker service:
 
@@ -157,21 +157,21 @@ Enable docker service:
 
 2. Create Own Docker network:
 
-      docker network create \
-      --driver bridge \
-      --subnet 172.18.0.0/16 \
-      psnet
+       docker network create \
+       --driver bridge \
+       --subnet 172.18.0.0/16 \
+       psnet
 
 Check Network created:
 
-      docker network ls
+       docker network ls
 
 3. Launch Container In that Network:
 
 
-      docker run -dit --name database \
-      --network psnet -v /mydata:/var/lib/mysql \
-      -e MYSQL_ROOT_PASSWORD=pratik55  \
-      -e MYSQL_DATABASE=mydatabase
-      -e MYSQL_USER=jack
-      -e MYSQL_PASSWORD=jack11 mysql
+       docker run -dit --name database \
+       --network psnet -v /mydata:/var/lib/mysql \
+       -e MYSQL_ROOT_PASSWORD=pratik55  \
+       -e MYSQL_DATABASE=mydatabase
+       -e MYSQL_USER=jack
+       -e MYSQL_PASSWORD=jack11 mysql
