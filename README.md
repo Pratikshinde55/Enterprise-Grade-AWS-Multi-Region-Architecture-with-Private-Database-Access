@@ -186,7 +186,7 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 # VPC Peering Different regional: [AT Mumbai region]
 From Mumbai region we sent req vpc peering to the Sydney region
 
-1. Create VPC Peering Request (Mumbai):
+## 1. Create VPC Peering Request (Mumbai):
 
 Go to VPC → Peering Connections -> Click Create peering connection
 
@@ -201,5 +201,25 @@ Region	-> ap-southeast-2 (Sydney)
 VPC ID (Accepter)-> 	vpc-09399cfe5356f7616 [sydney region vpc PS-DataBase-VPC id]
 
 <img width="1705" height="695" alt="image" src="https://github.com/user-attachments/assets/3c92a354-acdb-42cd-9ab7-8b7de13f9aab" />
+
+
+Here we can see vpc peering req send from mumbai region to sydney region:
+<img width="1677" height="610" alt="image" src="https://github.com/user-attachments/assets/ad98dc97-c7d8-42b5-bb92-aba760b881dd" />
+
+## 2. Accept request at sydney region: (Sydney region)
+Sydney region we can see at VPC Perring Connection:
+<img width="1473" height="277" alt="image" src="https://github.com/user-attachments/assets/d64cc5c3-b67e-4629-a857-8bfe9f699bd5" />
+
+Go To "Action" and press "Accept":
+<img width="992" height="382" alt="image" src="https://github.com/user-attachments/assets/78c6576e-aa51-4da0-9d5f-f6fe6dcd6119" />
+
+Now We can see Status is Active On Region -> Peering Connection:
+
+Sydney Region: (Peering Connection)
+<img width="1496" height="350" alt="image" src="https://github.com/user-attachments/assets/8c4b4674-4cd7-47d8-ac90-81eaee6f7591" />
+
+
+Mumbai Region: (Peering Connection)
+<img width="1501" height="345" alt="image" src="https://github.com/user-attachments/assets/73b095fa-317d-4339-bff8-4ab9d4efee26" />
 
 
