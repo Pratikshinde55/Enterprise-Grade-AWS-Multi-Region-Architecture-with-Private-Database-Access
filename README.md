@@ -150,7 +150,7 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
      yum install docker -y
 
-Enable docker service:
+ Enable docker service:
 
     systemctl start docker 
     systemctl enable  docker --now 
@@ -162,9 +162,11 @@ Enable docker service:
        --subnet 172.18.0.0/16 \
        psnet
 
-Check Network created:
+ Check Network created:
 
        docker network ls
+
+<img width="1540" height="300" alt="image" src="https://github.com/user-attachments/assets/7c9fe5b0-fc83-43bf-a524-d86648ddbf27" />
 
 3. Launch Container In that Network:
 
