@@ -296,3 +296,16 @@ Sydney Region EC2 To Mumbai region EC2 Private IP ping:
 -----
 
 -----
+
+# Mumbai EC2 Workpress install:
+
+install workpress:
+
+      docker run -dit \
+      --name wordpress \
+      -p 8080:80 \
+      -e WORDPRESS_DB_HOST=10.10.2.145:3306 \
+      -e WORDPRESS_DB_NAME=mydatabase \
+      -e WORDPRESS_DB_USER=jack \
+      -e WORDPRESS_DB_PASSWORD=jack11 \
+      wordpress
