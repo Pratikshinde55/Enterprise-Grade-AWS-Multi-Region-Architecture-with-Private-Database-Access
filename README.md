@@ -285,7 +285,7 @@ Add target sydney vpn with sydney region VPC CIDR
 
 -----
 
-# Dydney Region VPN Set-up final:
+# Sydney Region VPN Set-up final:
 
 ## 1. Create Customer Gateway & Put Mumabi region IP address that Mumbai tunner1 IP: (Mumbai Tunnel-1 IP: 13.201.111.175)
 <img width="1647" height="555" alt="image" src="https://github.com/user-attachments/assets/7dd6bbed-0a94-428a-b17b-455711123821" />
