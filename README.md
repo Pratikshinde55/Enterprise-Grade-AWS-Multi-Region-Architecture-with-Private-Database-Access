@@ -123,7 +123,7 @@ subnet associations:
 Route To Target-NAT:
 <img width="1532" height="271" alt="image" src="https://github.com/user-attachments/assets/c0d26519-64c8-4b02-ae92-dbb03a647c12" />
 
-## 7. Final VPC architecure for Mumbai Region:
+## 7. Final VPC architecure for Sydney Region:
 <img width="1597" height="492" alt="image" src="https://github.com/user-attachments/assets/05fb83c8-8b2c-4d4e-b02a-cc7a8aa67929" />
 
 ## 8. Launch EC2 in Private Subnet:(Full Secure) 
