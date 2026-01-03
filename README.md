@@ -85,6 +85,23 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
 
 
+# Sydney Region: DataBase Backend(Private)
+This Region only used for host db in private ec2 No public connectivity or anything.
+
+1. Create VPC:
+Name: PS-DataBase-VPC
+CIDR: 10.10.0.0/16
+
+2. Create 4 subnet, Two public two private:
+<img width="1312" height="152" alt="image" src="https://github.com/user-attachments/assets/0ee2146a-92c5-4841-8ea5-3c668f2d1320" />
+
+
+3. Now create Internet gateway:
+
+Here Public DNAY traffic not come in but inside traffic like install images need go outside So NAT is needed.
+
+**NAT Gateway WILL NOT WORK without IGW, NAT Gateway must be in a public subnet**  So we need Internet gateway here also.
+
 
 
 
