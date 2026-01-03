@@ -54,7 +54,17 @@ NAT Gateway must launch in Public Subnet.
 
 Here we create new route table for NAT Gateway
 
-name:
+name:PS-Wordpress-RouteTable-NAT
+
+Now here in Route table of NAT and "Subnet associations" we add Priavte Subnet which we will use for launch EC2 in private zone.
+
+Subnet associations:
+<img width="1287" height="273" alt="image" src="https://github.com/user-attachments/assets/2a069e82-8935-4c0f-a28c-bfa5c17afc7c" />
+
+In Route we add use NAT for go outside:
+<img width="1512" height="398" alt="image" src="https://github.com/user-attachments/assets/86d973a6-f5fb-44cf-a2af-84b3ef44a06a" />
+
+
 
 
 
