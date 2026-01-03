@@ -2,10 +2,10 @@
 DevOps Portfolio Platform on AWS using ALB, Private VPC, and VPN
 
 # Mumbai Region- Wokrpress
-1. Create VPC: (PS-Workpress-vpc-mumbai)
+## 1. Create VPC: (PS-Workpress-vpc-mumbai)
 VPC CIDR: 10.10.0.0/16
 
-2.  Now create 4 Subnets for HA: 2 Public 2 Private
+## 2.  Now create 4 Subnets for HA: 2 Public 2 Private
 Create Subnet using "PS-Workpress-vpc-mumbai" VPC.
 
 Now create 4 subnets with diff available zones for HA & Fault tolerance:
@@ -18,7 +18,7 @@ Now create 4 subnets with diff available zones for HA & Fault tolerance:
 
 
 
-3. Now Create Internet GateWay for Your VPC:
+## 3. Now Create Internet GateWay for Your VPC:
 
 Name: PS-Wordpress-InternetGateway
 
