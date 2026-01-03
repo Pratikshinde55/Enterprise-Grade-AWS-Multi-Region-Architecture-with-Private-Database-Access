@@ -83,7 +83,7 @@ In "Adanced details"- Now attch a IAM rule that allow ec2 ssm access (AmazonSSMM
 Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 <img width="1295" height="146" alt="image" src="https://github.com/user-attachments/assets/199b44c7-bb2b-4445-9229-4c9e2e105976" />
 
-
+-----
 
 # Sydney Region: DataBase Backend(Private)
 This Region only used for host db in private ec2 No public connectivity or anything.
@@ -126,4 +126,4 @@ Route To Target-NAT:
 <img width="1597" height="492" alt="image" src="https://github.com/user-attachments/assets/05fb83c8-8b2c-4d4e-b02a-cc7a8aa67929" />
 
 
-
+-----
