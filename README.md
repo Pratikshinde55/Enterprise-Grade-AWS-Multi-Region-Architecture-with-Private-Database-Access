@@ -34,5 +34,13 @@ Once create Route Table in "Subnet associations" Attch the subnet that we want t
 Explicit subnet associations 
 <img width="1256" height="272" alt="image" src="https://github.com/user-attachments/assets/5365ee95-f512-4123-95b4-687290988e01" />
 
+- Note: Local Route means it is switch like set-up, the ec2 in same vpc can communicate each other by using this.
+
+Here Route enable means from internet gateway outside traffic allow using route table to come in only the subnet associated to the this Route tabel that is Public subnet. 
+<img width="1445" height="287" alt="image" src="https://github.com/user-attachments/assets/13c52e88-d0e6-4855-9ec9-ad23873f704b" />
+
+
+## 5. 
+
 
 
