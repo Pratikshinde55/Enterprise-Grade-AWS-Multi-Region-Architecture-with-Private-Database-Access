@@ -80,6 +80,10 @@ In "Adanced details"- Now attch a IAM rule that allow ec2 ssm access (AmazonSSMM
 <img width="1090" height="237" alt="image" src="https://github.com/user-attachments/assets/8a3494fb-2208-422e-ab29-283255d052c3" />
 
 
+Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
+<img width="1295" height="146" alt="image" src="https://github.com/user-attachments/assets/199b44c7-bb2b-4445-9229-4c9e2e105976" />
+
+
 
 
 
