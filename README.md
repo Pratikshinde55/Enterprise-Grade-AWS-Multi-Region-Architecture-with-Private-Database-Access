@@ -339,3 +339,4 @@ Include EC2 with the workpress container exposed 8080:
 
 
 2. 
+3.  
