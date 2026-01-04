@@ -353,5 +353,6 @@ Note: We use old Security group of EC2 and just add new inbound rule that allow 
 
 We can also able create seperate new Security group & add the ec2.
 
+Old Ec2 Mumbai Region Security group --> name:Workpress-EC2-SG
 <img width="1517" height="386" alt="image" src="https://github.com/user-attachments/assets/ffc40d2b-7deb-43ba-b0b0-c35c79aa0981" />
 
