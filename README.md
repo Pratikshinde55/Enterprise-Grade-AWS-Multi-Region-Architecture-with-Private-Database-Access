@@ -1,5 +1,8 @@
 # DevOps Portfolio Platform on AWS using ALB, Private VPC, 
-<img width="1316" height="875" alt="image" src="https://github.com/user-attachments/assets/cc3ae85a-1ef6-4fd2-86c2-02a5a3c1f42a" />
+
+Project Architecture:
+<img width="1337" height="868" alt="image" src="https://github.com/user-attachments/assets/a53b0c14-1721-4755-95c9-85705c7c79db" />
+
 
 
 _________
