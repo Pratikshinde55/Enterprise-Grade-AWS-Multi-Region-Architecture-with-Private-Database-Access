@@ -347,4 +347,11 @@ USE same VPC of Mumbai region: VPC	--> PS-Workpress-vpc-mumbai
 
 
 
-## 3.  
+## 3.  Edit Security Group of Mumbai EC2 workdprees: (Allow alb-sg to come in ec2)
+
+Note: We use old Security group of EC2 and just add new inbound rule that allow traffic from alb-security group at port no 8080.
+
+We can also able create seperate new Security group & add the ec2.
+
+<img width="1517" height="386" alt="image" src="https://github.com/user-attachments/assets/ffc40d2b-7deb-43ba-b0b0-c35c79aa0981" />
+
