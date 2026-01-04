@@ -356,3 +356,20 @@ We can also able create seperate new Security group & add the ec2.
 Old Ec2 Mumbai Region Security group --> name:Workpress-EC2-SG
 <img width="1517" height="386" alt="image" src="https://github.com/user-attachments/assets/ffc40d2b-7deb-43ba-b0b0-c35c79aa0981" />
 
+
+## 4. Create Application Load Balancer:
+EC2 -->  Load Balancers --> Create Load Balancer
+
+Basic confifuration of ALb:
+<img width="1776" height="618" alt="image" src="https://github.com/user-attachments/assets/8b12bd25-06b6-4e64-bdad-987021e74be4" />
+
+
+Network Mapping: (Must Launch in Public Subnet Then Only Work)
+<img width="1810" height="652" alt="image" src="https://github.com/user-attachments/assets/f375b053-1c02-4090-9ea6-2f4a2ab94317" />
+
+Security group: Select security group that we created for ALB
+<img width="1313" height="188" alt="image" src="https://github.com/user-attachments/assets/aba75146-acc7-4ba9-ac00-07863076e83f" />
+
+Listeners and routing: (When we HTTPS SSL then we use HTTPS otherwise use HTTP-80)
+<img width="1585" height="623" alt="image" src="https://github.com/user-attachments/assets/ce0e3ef5-444d-439a-8c64-3d7ffab3ce51" />
+
