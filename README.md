@@ -1,10 +1,13 @@
 # DevOps Portfolio Platform on AWS using ALB, Private VPC, 
 
-Project Architecture:
+**Project Architecture:**
 <img width="1337" height="868" alt="image" src="https://github.com/user-attachments/assets/a53b0c14-1721-4755-95c9-85705c7c79db" />
 
+**ARCHITECTURE DESCRIPTION:**
 
-
+This architecture uses cross-region VPC peering to securely connect a WordPress application hosted in the Mumbai region with a private MySQL database hosted in the Sydney region. 
+All traffic flows over the AWS private backbone without exposing backend resources to the internet. The application is accessed only via an Application Load Balancer, 
+while compute instances remain in private subnets
 _________
 # Mumbai Region- Wokrpress
 ## 1. Create VPC: (PS-Workpress-vpc-mumbai)
