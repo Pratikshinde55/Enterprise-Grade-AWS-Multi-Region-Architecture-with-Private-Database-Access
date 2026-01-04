@@ -316,7 +316,7 @@ install workpress:
 
 #  ALB Set-up Mumbai Region:
 
-## 1. Create Target group:
+## 1. Create Target group: (Only one we create)
  
 Target type	 --> Instance
 
@@ -387,3 +387,15 @@ ADD **/welcome listner** : Ste Path based routing:
 Action:
 <img width="1306" height="566" alt="image" src="https://github.com/user-attachments/assets/70161c72-2895-4855-a07e-235e2e08bba0" />
 
+
+Note:
+
+- In Target Group The Health status maust be **"Healthy"**, That means the target group heat the 8080 prot health check path and that available.
+- At ALB Listeners and rules -> we create HTTP because i don't have registered  Domain, If domain name have then use HTTPS with ALB SLL certificate manage by ACM.
+- In HTTP listener i add "Rule" that is Path routing.
+- Workflow:  ALB --> Listener(HTTP or HTTPS)  --> Rule (Path routing: /admin or /welcome) --> Target Group(Here mention ec2-8080)  --> EC2 at 8080 workpress app.
+- ALB Rule: must rule that have low chnages that make last priority.
+  <img width="1529" height="667" alt="image" src="https://github.com/user-attachments/assets/1195930f-dc4c-43a1-af37-bcfbab8c001b" />
+
+
+  
