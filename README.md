@@ -404,8 +404,8 @@ Note:
 - At ALB Listeners and rules -> we create HTTP because i don't have registered  Domain, If domain name have then use HTTPS with ALB SLL certificate manage by ACM.
 - In HTTP listener i add "Rule" that is Path routing.
 - Workflow:  ALB --> Listener(HTTP or HTTPS)  --> Rule (Path routing: /admin or /welcome) --> Target Group(Here mention ec2-8080)  --> EC2 at 8080 workpress app.
-- ALB Rule: Priority
- <img width="1557" height="566" alt="image" src="https://github.com/user-attachments/assets/99661a54-f314-485c-b686-e5d6246a93f2" />
+- ALB Rule: Priority [Added other Path that needed for wordpress]
+ <img width="1822" height="808" alt="image" src="https://github.com/user-attachments/assets/3ed2f681-99de-427c-8334-0a407e87184c" />
 
 
 
