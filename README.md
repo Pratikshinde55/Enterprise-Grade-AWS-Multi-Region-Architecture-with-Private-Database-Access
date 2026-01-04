@@ -23,11 +23,18 @@ while compute instances remain in private subnets
 
 
 ## Steps:
-1. 
+1. Mumbai region set-up: Wordpress (VPC and EC2)
+2. Sydney Region: DataBase Backend(Private)
+3. DB-Setup on Sydney EC2:
+4. VPC Peering Different regional: [AT Mumbai region]
+5. Mumbai EC2 Workpress install:
+6. ALB Set-up Mumbai Region:
+7. Access App from Browser:
+   
 _________
 _________
 
-# Mumbai region set-up
+# Mumbai region set-up:
 ## 1. Create VPC: (PS-Workpress-vpc-mumbai)
 VPC CIDR: 10.0.0.0/16
 
@@ -215,25 +222,25 @@ Now connect to EC2 by SSM and chcek NAT is working or by ping to the goggle:
 
 7. Drop user if partially exists:
 
-     DROP USER IF EXISTS 'jack'@'%';
-     DROP USER IF EXISTS 'jack'@'localhost';
+      DROP USER IF EXISTS 'jack'@'%';
+      DROP USER IF EXISTS 'jack'@'localhost';
 
  8. Create user (allow remote access):
 
-     CREATE USER 'jack'@'%' IDENTIFIED BY 'jack11';
+      CREATE USER 'jack'@'%' IDENTIFIED BY 'jack11';
 
 9. Grant access to your DB:
 
-      GRANT ALL PRIVILEGES ON mydatabase.* TO 'jack'@'%';
-      FLUSH PRIVILEGES;
+       GRANT ALL PRIVILEGES ON mydatabase.* TO 'jack'@'%';
+       FLUSH PRIVILEGES;
 
 10. Verify user:
 
-      SELECT Host, User FROM mysql.user WHERE User='jack';
+        SELECT Host, User FROM mysql.user WHERE User='jack';
 
 11. Test From Local Host:(Pass jack11)
 
-      docker exec -it database mysql -u jack -p
+        docker exec -it database mysql -u jack -p
 
 -----
 
