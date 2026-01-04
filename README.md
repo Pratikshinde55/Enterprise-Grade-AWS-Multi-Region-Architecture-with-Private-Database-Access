@@ -417,4 +417,16 @@ Here Create Admin: (wp-login.php this wordpress official login route)
 ## Create user page come and install wordpress:
 <img width="1526" height="925" alt="image" src="https://github.com/user-attachments/assets/1c8b4a98-fa9d-4f57-bff9-5ef586b8cf35" />
 
-## 
+## Create Page at woordpress by GUI:
+/wp-login.php or /admin
+
+Then create page:
+
+
+## Set /welcome as default so no need use wordpress url :
+
+<img width="1877" height="875" alt="image" src="https://github.com/user-attachments/assets/1306af5d-364c-4c1b-a029-33eba4103d0c" />
+
+Now set- Permalinks at wordpres-GUI using admin:
+
+<img width="1853" height="848" alt="image" src="https://github.com/user-attachments/assets/11f75adc-384c-480d-8c22-ce1aea49470e" />
