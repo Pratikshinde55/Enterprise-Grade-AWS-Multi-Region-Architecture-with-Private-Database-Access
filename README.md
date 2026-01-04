@@ -422,6 +422,7 @@ Here Create Admin: (wp-login.php this wordpress official login route)
 
 Then create page:
 
+For create page go to pages and create welcome page and publish
 
 ## Set /welcome as default so no need use wordpress url :
 
@@ -430,3 +431,7 @@ Then create page:
 Now set- Permalinks at wordpres-GUI using admin:
 
 <img width="1853" height="848" alt="image" src="https://github.com/user-attachments/assets/11f75adc-384c-480d-8c22-ce1aea49470e" />
+
+## Access by /welcome any one public: [No Login needed]
+<img width="1542" height="795" alt="image" src="https://github.com/user-attachments/assets/6ee45d13-e74e-480f-91a0-7d219a35fc6d" />
+
