@@ -375,8 +375,15 @@ Listeners and routing: (When we HTTPS SSL then we use HTTPS otherwise use HTTP-8
 
 ## 5. Now Set Path Lisener at ALB:
 
-Set Admin Path based Route: 
+Add **/admin listner**: Set Admin Path based Route: 
 <img width="1784" height="771" alt="image" src="https://github.com/user-attachments/assets/120539f2-33c0-4b83-8595-5d50d29a0768" />
 
 Action we want to take trasfer to Admin target Group:
 <img width="1100" height="503" alt="image" src="https://github.com/user-attachments/assets/c74eb326-e867-4547-9e9d-0135893145fc" />
+
+ADD **/welcome listner** : Ste Path based routing:
+<img width="1763" height="675" alt="image" src="https://github.com/user-attachments/assets/ae058f96-8a52-4ec0-814c-ae6493806534" />
+
+Action:
+<img width="1306" height="566" alt="image" src="https://github.com/user-attachments/assets/70161c72-2895-4855-a07e-235e2e08bba0" />
+
