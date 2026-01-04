@@ -309,3 +309,30 @@ install workpress:
       -e WORDPRESS_DB_USER=jack \
       -e WORDPRESS_DB_PASSWORD=jack11 \
       wordpress
+
+-----
+
+-----
+
+#  ALB Set-up Mumbai Region:
+
+1. Create Target group:
+ 
+Target type	 --> Instance
+
+Protocol	--> HTTP
+
+Port	--> 80 or 8080
+
+IP address type	--> IPv4
+
+VPC	--> PS-Workpress-vpc-mumbai
+
+<img width="1790" height="839" alt="image" src="https://github.com/user-attachments/assets/04dccf13-0a41-4da1-bc31-1b9799649846" />
+
+Success code 200-399 that make alive site because we use Login for Admin:
+<img width="1742" height="839" alt="image" src="https://github.com/user-attachments/assets/99bd69d3-709d-497e-8ed5-7b3b8f49c90a" />
+
+
+
+2. 
