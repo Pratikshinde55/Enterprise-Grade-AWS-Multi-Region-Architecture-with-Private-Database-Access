@@ -316,7 +316,7 @@ install workpress:
 
 #  ALB Set-up Mumbai Region:
 
-1. Create Target group:
+## 1. Create Target group:
  
 Target type	 --> Instance
 
@@ -338,5 +338,13 @@ Include EC2 with the workpress container exposed 8080:
 
 
 
-2. 
-3.  
+## 2. Create ALB Security Group (PUBLIC ENTRY)
+EC2 --> Security Groups --> Create security group
+
+USE same VPC of Mumbai region: VPC	--> PS-Workpress-vpc-mumbai
+
+<img width="1547" height="583" alt="image" src="https://github.com/user-attachments/assets/258c6612-e980-4eff-b748-7b61d84c9c82" />
+
+
+
+## 3.  
