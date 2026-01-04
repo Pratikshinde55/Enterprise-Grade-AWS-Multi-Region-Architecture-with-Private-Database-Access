@@ -373,3 +373,10 @@ Security group: Select security group that we created for ALB
 Listeners and routing: (When we HTTPS SSL then we use HTTPS otherwise use HTTP-80)
 <img width="1585" height="623" alt="image" src="https://github.com/user-attachments/assets/ce0e3ef5-444d-439a-8c64-3d7ffab3ce51" />
 
+## 5. Now Set Path Lisener at ALB:
+
+Set Admin Path based Route: 
+<img width="1784" height="771" alt="image" src="https://github.com/user-attachments/assets/120539f2-33c0-4b83-8595-5d50d29a0768" />
+
+Action we want to take trasfer to Admin target Group:
+<img width="1100" height="503" alt="image" src="https://github.com/user-attachments/assets/c74eb326-e867-4547-9e9d-0135893145fc" />
