@@ -334,7 +334,8 @@ Success code 200-399 that make alive site because we use Login for Admin:
 <img width="1742" height="839" alt="image" src="https://github.com/user-attachments/assets/99bd69d3-709d-497e-8ed5-7b3b8f49c90a" />
 
 Include EC2 with the workpress container exposed 8080:
-<img width="1881" height="720" alt="image" src="https://github.com/user-attachments/assets/5675f67f-c3f5-4b7d-8e43-c804ee825840" />
+<img width="1881" height="720" alt="image" src="https://github.com/user-attachments/assets/a7d88488-13a6-4479-9664-7c7cabf7129a" />
+
 
 
 2. 
