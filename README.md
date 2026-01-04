@@ -1,4 +1,4 @@
-# Secure Cross-Region AWS WordPress Architecture using VPC Peering and ALB, Private VPC, 
+# Secure Cross-Region AWS WordPress Architecture using VPC Peering, Private VPC and ALB
 
 **Project Architecture:**
 <img width="1337" height="868" alt="image" src="https://github.com/user-attachments/assets/a53b0c14-1721-4755-95c9-85705c7c79db" />
