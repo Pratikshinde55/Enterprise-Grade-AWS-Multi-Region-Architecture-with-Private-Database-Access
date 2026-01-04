@@ -375,11 +375,21 @@ Listeners and routing: (When we HTTPS SSL then we use HTTPS otherwise use HTTP-8
 
 ## 5. Now Set Path Lisener at ALB:
 
+Add /wp-login.php* Rule this rule for 1st time login after app up:
+<img width="1781" height="717" alt="image" src="https://github.com/user-attachments/assets/5c635da1-5e62-4015-8686-e507664ddebb" />
+
+Action:
+<img width="1342" height="440" alt="image" src="https://github.com/user-attachments/assets/c1c71ba1-9b4e-43aa-b424-641e77b64266" />
+
+---
+
 Add **/admin listner**: Set Admin Path based Route: 
 <img width="1784" height="771" alt="image" src="https://github.com/user-attachments/assets/120539f2-33c0-4b83-8595-5d50d29a0768" />
 
 Action we want to take trasfer to Admin target Group:
 <img width="1100" height="503" alt="image" src="https://github.com/user-attachments/assets/c74eb326-e867-4547-9e9d-0135893145fc" />
+
+---
 
 ADD **/welcome listner** : Ste Path based routing:
 <img width="1763" height="675" alt="image" src="https://github.com/user-attachments/assets/ae058f96-8a52-4ec0-814c-ae6493806534" />
@@ -394,8 +404,32 @@ Note:
 - At ALB Listeners and rules -> we create HTTP because i don't have registered  Domain, If domain name have then use HTTPS with ALB SLL certificate manage by ACM.
 - In HTTP listener i add "Rule" that is Path routing.
 - Workflow:  ALB --> Listener(HTTP or HTTPS)  --> Rule (Path routing: /admin or /welcome) --> Target Group(Here mention ec2-8080)  --> EC2 at 8080 workpress app.
-- ALB Rule: must rule that have low chnages that make last priority.
-  <img width="1529" height="667" alt="image" src="https://github.com/user-attachments/assets/1195930f-dc4c-43a1-af37-bcfbab8c001b" />
+- ALB Rule: Priority
+ <img width="1557" height="566" alt="image" src="https://github.com/user-attachments/assets/99661a54-f314-485c-b686-e5d6246a93f2" />
 
 
-  
+
+Now APP is live we use alb DNS name  to access site: (alb-wordpress-155777051.ap-south-1.elb.amazonaws.com)
+
+Here just /welcome /admin add at last path.
+
+1st time admin add use /wp-login.php
+
+-----
+
+-----
+
+# Access App from Browser:
+
+## 1. 1st time access app then need login needed:
+http://alb-wordpress-155777051.ap-south-1.elb.amazonaws.com/wp-login.php
+
+Here Create Admin: (wp-login.php this wordpress official login route)
+
+<img width="1592" height="921" alt="image" src="https://github.com/user-attachments/assets/152e951c-7991-447d-af86-4c2a17571fe4" />
+
+
+## Create user page come and install wordpress:
+<img width="1526" height="925" alt="image" src="https://github.com/user-attachments/assets/1c8b4a98-fa9d-4f57-bff9-5ef586b8cf35" />
+
+## 
