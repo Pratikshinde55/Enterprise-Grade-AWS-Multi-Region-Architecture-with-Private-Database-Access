@@ -375,27 +375,12 @@ Listeners and routing: (When we HTTPS SSL then we use HTTPS otherwise use HTTP-8
 
 ## 5. Now Set Path Lisener at ALB:
 
-Add /wp-login.php* Rule this rule for 1st time login after app up:
-<img width="1781" height="717" alt="image" src="https://github.com/user-attachments/assets/5c635da1-5e62-4015-8686-e507664ddebb" />
+Add /* rule that allow all wordpress api call to come in ec2:
+<img width="1452" height="538" alt="image" src="https://github.com/user-attachments/assets/4b4b034e-140f-47ac-979d-b574c0f88063" />
 
-Action:
-<img width="1342" height="440" alt="image" src="https://github.com/user-attachments/assets/c1c71ba1-9b4e-43aa-b424-641e77b64266" />
+Then Action:
+<img width="1443" height="542" alt="image" src="https://github.com/user-attachments/assets/ec8caf1c-0fce-4c56-b682-8cdb43207d68" />
 
----
-
-Add **/admin listner**: Set Admin Path based Route: 
-<img width="1784" height="771" alt="image" src="https://github.com/user-attachments/assets/120539f2-33c0-4b83-8595-5d50d29a0768" />
-
-Action we want to take trasfer to Admin target Group:
-<img width="1100" height="503" alt="image" src="https://github.com/user-attachments/assets/c74eb326-e867-4547-9e9d-0135893145fc" />
-
----
-
-ADD **/welcome listner** : Ste Path based routing:
-<img width="1763" height="675" alt="image" src="https://github.com/user-attachments/assets/ae058f96-8a52-4ec0-814c-ae6493806534" />
-
-Action:
-<img width="1306" height="566" alt="image" src="https://github.com/user-attachments/assets/70161c72-2895-4855-a07e-235e2e08bba0" />
 
 
 Note:
@@ -405,7 +390,7 @@ Note:
 - In HTTP listener i add "Rule" that is Path routing.
 - Workflow:  ALB --> Listener(HTTP or HTTPS)  --> Rule (Path routing: /admin or /welcome) --> Target Group(Here mention ec2-8080)  --> EC2 at 8080 workpress app.
 - ALB Rule: Priority [Added other Path that needed for wordpress]
- <img width="1822" height="808" alt="image" src="https://github.com/user-attachments/assets/3ed2f681-99de-427c-8334-0a407e87184c" />
+ <img width="1533" height="423" alt="image" src="https://github.com/user-attachments/assets/f89a8ddb-e7e1-4428-aeae-acacfe06ab27" />
 
 
 
