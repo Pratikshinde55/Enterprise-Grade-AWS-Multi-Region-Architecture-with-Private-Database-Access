@@ -1,9 +1,9 @@
 # Secure Cross-Region AWS WordPress Architecture using VPC Peering, Private VPC and ALB
 
-**Project Architecture:**
-<img width="1337" height="868" alt="image" src="https://github.com/user-attachments/assets/a53b0c14-1721-4755-95c9-85705c7c79db" />
+## Project Architecture:
+![Architecture Diagram](<img width="1337" height="868" alt="image" src="https://github.com/user-attachments/assets/a53b0c14-1721-4755-95c9-85705c7c79db" />)
 
-**ARCHITECTURE DESCRIPTION:**
+**ARCHITECTURE DESCRIPTION:
 
 This architecture uses cross-region VPC peering to securely connect a WordPress application hosted in the Mumbai region with a private MySQL database hosted in the Sydney region. 
 All traffic flows over the AWS private backbone without exposing backend resources to the internet. The application is accessed only via an Application Load Balancer, 
@@ -20,8 +20,13 @@ while compute instances remain in private subnets
 - [x] Security Groups – Stateful firewall rules for EC2 and ALB traffic control
 - [x] Route Tables – Routing traffic between subnets, NAT, IGW, and peered VPCs 
 
+
+## Steps:
+1. 
 _________
-# Mumbai Region- Wokrpress
+_________
+
+# Mumbai region set-up
 ## 1. Create VPC: (PS-Workpress-vpc-mumbai)
 VPC CIDR: 10.0.0.0/16
 
