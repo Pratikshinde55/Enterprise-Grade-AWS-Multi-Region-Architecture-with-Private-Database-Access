@@ -5,7 +5,7 @@
 _________
 # Mumbai Region- Wokrpress
 ## 1. Create VPC: (PS-Workpress-vpc-mumbai)
-VPC CIDR: 10.10.0.0/16
+VPC CIDR: 10.0.0.0/16
 
 ## 2.  Now create 4 Subnets for HA: 2 Public 2 Private
 Create Subnet using "PS-Workpress-vpc-mumbai" VPC.
